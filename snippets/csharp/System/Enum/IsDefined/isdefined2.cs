@@ -11,10 +11,10 @@ public class Example
    {
       Pets value = Pets.Dog | Pets.Cat;
       Console.WriteLine("{0:D} Exists: {1}",
-                        value, Pets.IsDefined(typeof(Pets), value));
+                        value, Enum.IsDefined(typeof(Pets), value));
       string name = value.ToString();
       Console.WriteLine("{0} Exists: {1}",
-                        name, Pets.IsDefined(typeof(Pets), name));
+                        name, Enum.IsDefined(typeof(Pets), name));
    }
 }
 // The example displays the following output:
